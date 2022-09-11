@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Unity Plugins</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">首页</string>
+    <string name="second_fragment_label">功能</string>
+    <string name="next">开始测试</string>
+    <string name="text_show_toast">弹窗</string>
+    <string name="text_toast_input">请在此处输入你要弹窗显示的内容</string>
+
+    <string name="text_readme">
+        这是一个用于测试我编写的用于Unity操作Android的部分操作的应用。\n
+        仅供测试，最后将使用打包出来的对应模块的aar进行相关的Unity联系Android的操作。
+    </string>
+</resources>

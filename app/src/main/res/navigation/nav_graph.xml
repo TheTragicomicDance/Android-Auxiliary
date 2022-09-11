@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainMenuFragment">
+
+    <fragment
+        android:id="@+id/MainMenuFragment"
+        android:name="top.easternday.unityplugins.MainMenuFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_mainmenu">
+
+        <action
+            android:id="@+id/action_MainMenuFragment_to_TestFragment"
+            app:destination="@id/TestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TestFragment"
+        android:name="top.easternday.unityplugins.TestFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_test">
+    </fragment>
+</navigation>
