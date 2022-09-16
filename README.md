@@ -1,44 +1,18 @@
 # Android Auxiliary for Unity
 
-``` JAVA
-package top.easternday.unitilities;
+本插件用于 Unity 与 Android 中的原生部分进行交互。
 
-import android.app.Activity;
-import android.widget.Toast;
+## 插件功能
 
-public class Unity2Android {
-    /**
-     * unity项目启动时的的上下文
-     */
-    private Activity _unityActivity;
+1. 弹窗显示
 
-    /**
-     * 获取unity项目的上下文
-     */
-    Activity getActivity(){
-        if(null == _unityActivity) {
-            try {
-                Class<?> classtype = Class.forName("com.unity3d.player.UnityPlayer");
-                _unityActivity = (Activity) classtype.getDeclaredField("currentActivity").get(classtype);
-            } catch (ClassNotFoundException | IllegalAccessException | NoSuchFieldException ignored) {
+## 待开发功能
 
-            }
-        }
-        return _unityActivity;
-    }
+1. 文件选择
 
-    /**
-     * Toast显示unity发送过来的内容
-     * @param content           消息的内容
-     * @return                  调用是否成功
-     */
-    public boolean showToast(String content,Activity activity){
-        Toast.makeText(activity,content,Toast.LENGTH_SHORT).show();
-        return true;
-    }
-    public boolean showToast(String content){
-        return showToast(content,getActivity());
-    }
-}
+## 参考
 
-```
+1. [Unity与Android交互方案优化版](https://www.jianshu.com/p/86b275da600e) 
+2. [jenthone/kotlin-unity](https://github.com/jenthone/kotlin-unity/)
+2. [AuriMoogle/Unity-SaveToSDCard](https://github.com/AuriMoogle/Unity-SaveToSDCard)
+4. [官方手册](https://docs.unity3d.com/Manual/android-plugins-java-code-from-c-sharp.html) 
