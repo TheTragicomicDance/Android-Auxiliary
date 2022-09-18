@@ -12,4 +12,6 @@
         这是一个用于测试我编写的用于Unity操作Android的部分操作的应用。\n
         仅供测试，最后将使用打包出来的对应模块的aar进行相关的Unity联系Android的操作。
     </string>
+    <string name="button_pick_directory">文件选择</string>
+    <string name="text_pick_directory">您选择的路径为：</string>
 </resources>

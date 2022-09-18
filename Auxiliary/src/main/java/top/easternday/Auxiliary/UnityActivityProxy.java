@@ -2,7 +2,7 @@ package top.easternday.Auxiliary;
 
 import android.app.Activity;
 
-public class UnityActivity {
+public class UnityActivityProxy {
 
     /**
      * 获取unity项目的上下文

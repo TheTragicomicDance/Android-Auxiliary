@@ -3,5 +3,4 @@
     xmlns:tools="http://schemas.android.com/tools">
     <uses-sdk android:targetSdkVersion="33" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:node="replace" />
-    <application android:requestLegacyExternalStorage="true" />
 </manifest>
